@@ -11,9 +11,9 @@ export class NewserverComponent {
     constructor() {
 
     }
-    // getServerStatus() {
-    //     this.serverstatus = 
-    // }
+    getServerStatus() {
+        return this.serverStatus;
+    }
 
 
 }
