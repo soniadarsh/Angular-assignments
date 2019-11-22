@@ -1,5 +1,6 @@
-<p>server-prop-binding works!</p>
-<button class="btn btn-primary" [disabled]="!allowNewServer">Click Me</button>
+<p>server-event-binding works!</p>
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Click Me</button>
+<p>{{serverCreationStatus}}</p>
 <h4>Button Status: isDisabled true or false </h4>
 <hr>
 <div><span>By string interpolation:-</span>
