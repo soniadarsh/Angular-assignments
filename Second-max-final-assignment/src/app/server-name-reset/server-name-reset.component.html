@@ -1,0 +1,18 @@
+<p>server-name-reset works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ol>
+                <li>Added input field which updates a property ('username') via two way binding [(ngModel)]</li>
+                <li>Output the username property via string interpolation below input</li>
+                <li>Added a button which will only be clicked if username is not emprty string</li>
+                <li>Upon Clicking a button username will be reset to an empty string</li>
+            </ol>
+            <hr>
+            <label>Username:</label>
+            <input type="text" class="form-control" [(ngModel)]="username">
+            <p>{{username}}</p>
+            <button class="btn btn-primary" [disabled]="username === ''" (click)="username = ''">Reset</button>
+        </div>
+    </div>
+</div>

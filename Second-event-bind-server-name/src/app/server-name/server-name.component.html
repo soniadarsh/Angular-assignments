@@ -1,0 +1,15 @@
+<p>server-name works!</p>
+<label>Server Name Input</label>
+<input class="form-control" type="text" [(ngModel)]="serverName" />
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Click Me</button>
+<p>{{serverCreationStatus}}</p>
+<hr>
+<h4>Button Status: isDisabled true or false</h4>
+<hr>
+<div><span>By string interpolation:-</span>
+    <p>{{allowNewServer}}</p>
+</div>
+
+<div><span>By Property Binding:-</span>
+    <p [innerText]="allowNewServer"></p>
+</div>
