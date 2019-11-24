@@ -1,0 +1,8 @@
+<p>server-ng-class-directives works!</p>
+<p>Note: Refresh the page to see server status changed also inspect to see online class applied or not via [ngClass]
+    property
+</p>
+<hr>
+<p class="server-status-para" [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus === 'Online'}">
+    {{'server'}} with id {{serverId}} is
+    {{serverStatus}}</p>
